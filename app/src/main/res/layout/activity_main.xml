@@ -7,44 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_gps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/gps"
+    <ImageView
+        android:id="@+id/Foto"
+        android:layout_width="261dp"
+        android:layout_height="246dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btn_ft"
-        android:layout_width="121dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="145dp"
-        android:text="@string/foto"
+        android:layout_width="131dp"
+        android:layout_height="71dp"
+        android:text="Foto"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Foto"
+        app:layout_constraintVertical_bias="0.231" />
 
-    <ImageView
-        android:id="@+id/Foto"
-        android:layout_width="263dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="113dp"
-        android:layout_marginBottom="109dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ft"
+    <Button
+        android:id="@+id/btn_gps"
+        android:layout_width="101dp"
+        android:layout_height="56dp"
+        android:text="GPS"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ft"
+        app:layout_constraintVertical_bias="0.297" />
 </androidx.constraintlayout.widget.ConstraintLayout>
